@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pruneleaf Privacy Policy</title>
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="./"><img src="images/icon.png" alt="">Pruneleaf</a>
+      <div class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+    </nav>
+
+    <main class="doc">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated 8 October 2026</p>
+
+      <p>Pruneleaf is a Mac app that frees disk space used by Claude Code and Claude Desktop and backs up Claude Code sessions to your own iCloud. In short: <strong>the developer collects nothing</strong>.</p>
+
+      <h2>What the developer collects</h2>
+      <p>Nothing. Pruneleaf has no servers, no accounts, no analytics, no advertising and no third-party SDKs. It does not track you and does not send any data to the developer or to anyone else.</p>
+
+      <h2>What stays on your Mac</h2>
+      <ul>
+        <li>Pruneleaf runs in the macOS App Sandbox and can only see the folders you allow: <code>~/.claude</code>, Claude Desktop's data folder and, if you allow it, <code>~/.claude.json</code>.</li>
+        <li>It reads file names, sizes and dates in those folders to show what can be cleaned. When you click Clean, it moves the items you selected to the Trash. It never deletes files outright.</li>
+        <li>Settings, folder permissions and the list of what has been backed up are stored in the app's own container on your Mac.</li>
+        <li>Notifications are created locally on your Mac.</li>
+      </ul>
+
+      <h2>iCloud backup (optional)</h2>
+      <ul>
+        <li>Claude Code session files are compressed and encrypted on your Mac with AES-256-GCM before they leave it. File names and paths are encrypted too.</li>
+        <li>The encrypted data is stored in your private iCloud database under your Apple Account and counts against your iCloud storage. The developer has no access to it.</li>
+        <li>The encryption key is stored in your iCloud Keychain, and you receive a recovery key that only you hold. Without a key the backup can't be read, by the developer or by anyone else.</li>
+        <li>Apple's iCloud terms and privacy policy apply to iCloud storage.</li>
+      </ul>
+
+      <h2>Deleting your data</h2>
+      <ul>
+        <li>To delete this Mac's backup, open Pruneleaf › Backup › Delete This Mac's Backup.</li>
+        <li>You can also delete all Pruneleaf data in System Settings › [your name] › iCloud › Storage.</li>
+        <li>Deleting the app removes its local data. Data in iCloud stays until you delete it as described above.</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>Pruneleaf is a general utility and does not knowingly collect information from anyone, including children.</p>
+
+      <h2>Changes</h2>
+      <p>If this policy changes, the new version will be published on this page with a new date.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="https://github.com/salih-g/pruneleaf-site/issues/new">open an issue</a>.</p>
+    </main>
+
+    <footer>
+      <span>Pruneleaf is not affiliated with Anthropic. “Claude” is a trademark of Anthropic, PBC.</span>
+      <span><a href="./">Home</a> · <a href="support.html">Support</a></span>
+    </footer>
+  </div>
+</body>
+</html>

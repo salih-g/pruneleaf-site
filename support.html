@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pruneleaf Support</title>
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="./"><img src="images/icon.png" alt="">Pruneleaf</a>
+      <div class="links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+    </nav>
+
+    <main class="doc">
+      <h1>Support</h1>
+      <p class="updated">Pruneleaf requires macOS 26 or later.</p>
+
+      <p>Didn't find your answer below? <a class="button" href="https://github.com/salih-g/pruneleaf-site/issues/new">Ask a question</a></p>
+
+      <h2>Common questions</h2>
+
+      <details>
+        <summary>Why does Pruneleaf ask for access to folders?</summary>
+        <p>Pruneleaf runs in the App Sandbox, so it can only see folders you allow. It needs <code>~/.claude</code> for Claude Code, Claude Desktop's data folder to clean the VM image and caches, and optionally <code>~/.claude.json</code> to back up MCP server settings. Each folder opens already selected; click Grant Access.</p>
+      </details>
+
+      <details>
+        <summary>Does Pruneleaf delete my files?</summary>
+        <p>No. Everything you clean is moved to the Trash, so you can put it back from Finder. The space comes back when you empty the Trash.</p>
+      </details>
+
+      <details>
+        <summary>It says Claude is running and won't clean.</summary>
+        <p>Claude Desktop's files can only be moved while Claude Desktop is closed, and Claude Code's files while no Claude Code session is open. Quit them and Pruneleaf continues on its own.</p>
+      </details>
+
+      <details>
+        <summary>Where is my backup stored?</summary>
+        <p>In your private iCloud database under your Apple Account, encrypted on your Mac first. The developer has no servers and no access to it.</p>
+      </details>
+
+      <details>
+        <summary>How do I restore on a new Mac or after a reinstall?</summary>
+        <p>Install Pruneleaf, allow access to <code>~/.claude</code>, then open Restore. If iCloud Keychain is on, your key arrives within a few minutes; otherwise enter your recovery key. Pick the Mac to restore from and review the files before you start.</p>
+      </details>
+
+      <details>
+        <summary>I lost my recovery key.</summary>
+        <p>If iCloud Keychain is on, open Pruneleaf › Backup › Recovery key › Show… on a Mac that still has the key and save it again. If no Mac has the key, the backup can't be decrypted. That is what keeps it private.</p>
+      </details>
+
+      <details>
+        <summary>How do I delete my backup?</summary>
+        <p>Open Pruneleaf › Backup › Delete This Mac's Backup, or remove Pruneleaf's data in System Settings › [your name] › iCloud › Storage.</p>
+      </details>
+    </main>
+
+    <footer>
+      <span>Pruneleaf is not affiliated with Anthropic. “Claude” is a trademark of Anthropic, PBC.</span>
+      <span><a href="./">Home</a> · <a href="privacy.html">Privacy Policy</a></span>
+    </footer>
+  </div>
+</body>
+</html>
